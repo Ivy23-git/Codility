@@ -5,6 +5,7 @@
 
 def variable_swap(a, b)
     # Your code here
+    a, b = b, a
 end
   
 # Example usage

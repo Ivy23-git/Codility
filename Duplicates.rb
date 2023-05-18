@@ -4,7 +4,17 @@
 =end
 
 def find_duplicates(arr)
-    # Your code here
+ 
+        duplicates = []
+        counts = Hash.new(0)
+      
+        arr.each do |element|
+          counts[element] += 1
+          duplicates << element if counts[element] > 1
+        end
+      
+        duplicates 
+      
 end
   
 # Example usage
